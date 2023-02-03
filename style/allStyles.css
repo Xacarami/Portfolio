@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#themeButton {
+    position: absolute;
+    /* left: calc(100% - 50px) ; */
+    padding: 4px 8px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    right: 10px;
+    top: 10px;
+}
+
+.navegacao {
+    display: flex;
+    margin: 10px auto;
+    width: 25%;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.navegacao a{
+    text-decoration: none;    
+}
+
+#imagemMinha {
+    max-width: 300px;
+}
+
+.apresentacao {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+
+.apresentacao a{
+    text-decoration: none;
+}
