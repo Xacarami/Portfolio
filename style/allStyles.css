@@ -30,7 +30,7 @@
 }
 
 #imagemMinha {
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .apresentacao {
@@ -40,6 +40,51 @@
     align-items: center;
 }
 
+.escritoApresentacao h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.escritoApresentacao p{
+    font-size: 18px;
+}
+
+.escritoApresentacao h4, .escritoApresentacao p{
+    margin: 10px 0;
+}
+
 .apresentacao a{
     text-decoration: none;
+}
+
+.tituloSubtituloHabilidade {
+    display: block;
+    justify-content: center;
+}
+
+.tituloSubtituloHabilidade h1, .tituloSubtituloHabilidade p {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.iconesHabilidades{
+    display: grid;
+    grid-template-columns: repeat(5, 11%);
+}
+
+.iconesHabilidades div{
+    border: 1px black solid;
+    border-radius: 100px;
+}
+
+.iconesHabilidades div img{
+    max-width: 100px;
+    display: flex;
+    margin: auto;
+}
+
+.iconesHabilidades div h2{
+    display: flex;
+    justify-content: center;
 }
