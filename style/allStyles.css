@@ -15,6 +15,7 @@
     border-radius: 8px;
     right: 10px;
     top: 10px;
+    position: fixed;
 }
 
 .navegacao {
@@ -30,12 +31,21 @@
 }
 
 #imagemMinha {
-    max-width: 250px;
+    max-width: 200px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.comeco{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .apresentacao {
     display: flex;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     align-items: center;
 }
@@ -49,12 +59,52 @@
     font-size: 18px;
 }
 
+.escritoApresentacao h4{
+    font-size: 1.5rem;
+}
+
 .escritoApresentacao h4, .escritoApresentacao p{
     margin: 10px 0;
 }
 
 .apresentacao a{
     text-decoration: none;
+}
+
+.linksExternos{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 200px;
+}
+
+.linksExternos div{
+    /* border: 3px solid silver; */
+    background-color: rgb(153, 153, 153);
+    padding: 7px 16px;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.linksExternos div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.linksExternos div a:hover{
+    color: gray;
+}
+
+.linksExternos img{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.linksExternos a:hover img{
+    opacity: 0.5;
 }
 
 .tituloSubtituloHabilidade {
@@ -68,23 +118,89 @@
     margin: 20px 0;
 }
 
+.campoHabilidade{
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 120px;
+}
+
 .iconesHabilidades{
+    /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(5, 11%);
+    grid-template-columns: repeat(5, 16%);
+    gap: 20px;
+    width: 50%;
 }
 
-.iconesHabilidades div{
-    border: 1px black solid;
-    border-radius: 100px;
+.iconesHabilidades button{
+    margin-left: 15px;
+    border: 3px rgb(146, 146, 146) solid;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0)
+    /* height: 150px; */
 }
 
-.iconesHabilidades div img{
-    max-width: 100px;
+.iconesHabilidades button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.iconesHabilidades button img{
+    /* max-width: 80px; */
     display: flex;
     margin: auto;
+    width: calc(70% - 20px);
+    clear: both;
 }
 
-.iconesHabilidades div h2{
+.iconesHabilidades button h2{
     display: flex;
     justify-content: center;
+    font-size: 15px;
+}
+
+.descricaoHabilidade {
+    width: 50%;
+}
+
+
+.infoHabilidade{
+    border-radius: 30px;
+    border: 4px rgb(146, 146, 146) solid;
+    margin: auto;
+    width: 90%;
+    min-height: 18rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloHabilidade{
+    margin: 10px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.infoHabilidade hr{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#descricaoHabilidadeEscrito{
+    font-size: 22px;
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
+
+#tituloProjetos{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.campoProjetos{
+    min-height: 500px;
 }

@@ -18,3 +18,11 @@ body {
 .apresentacao a:hover{
     color: rgb(102, 102, 102);
 }
+
+/* .iconesHabilidades button{
+    border: 5px rgb(146, 146, 146) solid;
+} */
+
+.iconesHabilidades button h2{
+    color: white;
+}
