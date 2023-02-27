@@ -4,7 +4,7 @@ body {
 }
 
 .navegacao a{
-    color: gainsboro;
+    color: rgb(255, 255, 255);
 }
 
 .navegacao a:hover{
@@ -19,6 +19,14 @@ body {
     color: rgb(102, 102, 102);
 }
 
+.linksExternos a{
+    background-color: rgb(82, 82, 82);
+    color: black;
+}
+
+.linksExternos a:hover{
+    color: rgb(255, 255, 255);
+}
 /* .iconesHabilidades button{
     border: 5px rgb(146, 146, 146) solid;
 } */
@@ -26,3 +34,4 @@ body {
 .iconesHabilidades button h2{
     color: white;
 }
+

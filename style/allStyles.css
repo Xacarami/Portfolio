@@ -18,36 +18,107 @@
     position: fixed;
 }
 
+.topo{
+    padding: 10px;
+}
+
 .navegacao {
     display: flex;
-    margin: 10px auto;
+    margin: auto;
     width: 25%;
     justify-content: space-around;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 0 30px 30px 30px;
 }
 
 .navegacao a{
+    /* margin-top: 10px; */
     text-decoration: none;    
 }
 
 #imagemMinha {
-    max-width: 200px;
-    margin: 20px;
+    max-width: 180px;
+    margin: 20px 60px 20px 30px;
     border-radius: 50%;
+    animation: sobeDesce 1.05s infinite alternate ;
+}
+
+@keyframes sobeDesce {
+    0% {
+        transform: translateY(20px);
+    }
+    /* 88% {
+        transform: translateY(10px);
+    } */
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.inicioImagem{
+    overflow: hidden;
+    /* margin-top: -7px; */
 }
 
 .comeco{
     height: 500px;
-    display: flex;
+    /* display: contents; */
     flex-direction: column;
     align-items: center;
+    /* position: absolute; */
+    overflow: hidden;
+
+}
+
+#imagemVaporwave{
+    display: flex;
+    user-select: none;
+    position: relative;
+    z-index: -99;
+    width: 100%;
+    filter: blur(10px);
+    filter: brightness(0.5);
+    /* margin-bottom: -760px; */
+    margin-bottom: -56.3%;
+    filter: contrast(100%);
+}
+
+#montanha1{
+    display: flex;
+    user-select: none;
+    position: relative;
+    left: -1000px;
+    bottom: -40px;
+    z-index: -99;
+    width: 100%;
+    filter: contrast(125%);
+    filter: brightness(0.8);
+    filter: blur(8px);
+    margin-bottom: -620px;
+}
+
+#montanha2{
+    display: flex;
+    user-select: none;
+    position: relative;
+    right: -1050px;
+    bottom: -70px;
+    z-index: -99;
+    width: 100%;
+    filter: contrast(125%);
+    filter: brightness(0.8);
+    filter: blur(8px);
+    margin-bottom: -620px;
+
 }
 
 .apresentacao {
     display: flex;
-    max-width: 900px;
     margin: auto;
     align-items: center;
+    max-width: 1000px;
+    margin-top: 75px;
 }
 
 .escritoApresentacao h1{
@@ -57,6 +128,7 @@
 
 .escritoApresentacao p{
     font-size: 18px;
+
 }
 
 .escritoApresentacao h4{
@@ -74,37 +146,23 @@
 .linksExternos{
     display: flex;
     justify-content: center;
-    position: absolute;
     bottom: 200px;
+    padding: 30px 0;
 }
 
-.linksExternos div{
-    /* border: 3px solid silver; */
-    background-color: rgb(153, 153, 153);
+.linksExternos a{
     padding: 7px 16px;
     border-radius: 10px;
     margin-left: 10px;
-
-}
-
-.linksExternos div a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
-}
-
-.linksExternos div a:hover{
-    color: gray;
+    border: 1px solid rgb(75, 75, 75);
 }
 
 .linksExternos img{
     height: 30px;
     margin-right: 10px;
-}
-
-.linksExternos a:hover img{
-    opacity: 0.5;
 }
 
 .tituloSubtituloHabilidade {
@@ -120,8 +178,13 @@
 
 .campoHabilidade{
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
+    margin: auto;
     padding-bottom: 120px;
+}
+
+.habilidade{
+    padding-top: 25px;
 }
 
 .iconesHabilidades{

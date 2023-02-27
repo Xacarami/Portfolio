@@ -18,6 +18,15 @@ body {
     color: black;
 }
 
+.linksExternos a{
+    background-color: rgb(196, 196, 196);
+    color: white;
+}
+
+.linksExternos a:hover{
+    color: black;
+}
+
 .iconesHabilidades button h2{
     color: black;
 }

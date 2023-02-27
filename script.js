@@ -11,6 +11,10 @@ const botaonodejs = document.getElementById("nodejs");
 const botaopostgresql = document.getElementById("postgresql");
 const botaosql = document.getElementById("sql");
 
+const montanha1 = document.getElementById("montanha1");
+const montanha2 = document.getElementById("montanha2");
+
+
 if (themeButton) {
     themeButton.addEventListener("click", ()=>{
         if (linkCss.attributes[1].value == "style/dark.css"){
@@ -24,6 +28,18 @@ if (themeButton) {
         }
     })
 }
+
+
+window.addEventListener("scroll", ()=>{
+    montanha1.style.left = (-window.pageYOffset)/1.25 - 1000 + 'px';
+})
+
+window.addEventListener("scroll", ()=>{
+    montanha2.style.left = (window.pageYOffset)/1.25 + 1050 + 'px';
+})
+
+
+
 
 tituloHabilidade.innerHTML = "Tecnologias";
 descricaoHabilidadeEscrito.innerHTML = "Clique em um dos ícones ao lado para que possa ver mais detalhes sobre ela!";
@@ -75,3 +91,22 @@ if(botaosql){
         descricaoHabilidadeEscrito.innerHTML = "Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional.";
     })
 }
+
+
+function perguntaDez(x, y){
+    z = (x*y)+5
+    console.log("Z = " + z)
+    if (z<=0){
+        console.log("Resposta A")
+    }else if (z<=100){
+        console.log("Resposta B")
+    } else{
+        console.log("Resposta C");
+    }
+}
+
+perguntaDez(3,2)
+perguntaDez(150,3)
+perguntaDez(7,-1)
+perguntaDez(-2,5)
+perguntaDez(50,3)
