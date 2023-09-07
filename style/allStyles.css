@@ -5,6 +5,10 @@
     font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #themeButton {
     position: absolute;
     /* left: calc(100% - 50px) ; */
@@ -13,41 +17,66 @@
     outline: none;
     border: none;
     border-radius: 8px;
-    right: 10px;
-    top: 10px;
-    position: fixed;
+    right: 15px;
+    top: 15px;
+    /* display: flex; */
+    justify-content: flex-end;
+    z-index: 1000;
 }
 
-.topo{
-    padding: 10px;
+.imagemDeFundo {
+    display: flex;
+}
+
+.topo {
+    /* padding: 10px; */
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    padding: 0 30px 0px 30px;
+    align-items: center;
+
+    background-color: rgba(10, 10, 34, 0.658);
+    box-shadow: 0 8px 32px 0 rgba(29, 37, 150, 0.521);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 0 0 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .navegacao {
     display: flex;
     margin: auto;
-    width: 25%;
+    width: 50%;
+    height: 100%;
     justify-content: space-around;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.795);
-    padding: 0 30px 30px 30px;
+    display: flex;
+    align-items: center;
 }
 
-.navegacao a{
+.navegacao a {
     /* margin-top: 10px; */
-    text-decoration: none;    
+    text-decoration: none;
+    display: flex;
+    /* align-items: center; */
 }
 
 #imagemMinha {
     max-width: 180px;
     margin: 20px 60px 20px 30px;
     border-radius: 50%;
-    animation: sobeDesce 1.05s infinite alternate ;
+    animation: sobeDesce 1.05s infinite alternate;
 }
 
 @keyframes sobeDesce {
     0% {
         transform: translateY(20px);
     }
+
     /* 88% {
         transform: translateY(10px);
     } */
@@ -56,12 +85,30 @@
     }
 }
 
-.inicioImagem{
+.inicioImagem {
     overflow: hidden;
+    height: 100vh;
+
     /* margin-top: -7px; */
 }
 
-.comeco{
+.desfoco {
+    box-shadow: 0 8px 32px 0 rgba(29, 37, 150, 0.521);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+
+    /* backdrop-filter: blur(5px); */
+    display: flex;
+    width: 1000px;
+    height: 450px;
+    margin: auto;
+    margin-top: 15vh;
+    padding: 10px;
+}
+
+.comeco {
     height: 500px;
     /* display: contents; */
     flex-direction: column;
@@ -71,46 +118,41 @@
 
 }
 
-#imagemVaporwave{
+#imagemVaporwave {
     display: flex;
     user-select: none;
-    position: relative;
+    /* position: relative; */
     z-index: -99;
     width: 100%;
     filter: blur(10px);
     filter: brightness(0.5);
     /* margin-bottom: -760px; */
     margin-bottom: -56.3%;
-    filter: contrast(100%);
+    filter: contrast(200%);
 }
 
-#montanha1{
+#montanha1,
+#montanha2 {
     display: flex;
     user-select: none;
     position: relative;
-    left: -1000px;
-    bottom: -40px;
-    z-index: -99;
-    width: 100%;
+    z-index: 1;
+    /* height: 150%; */
+    /* width: 100%; */
     filter: contrast(125%);
     filter: brightness(0.8);
-    filter: blur(8px);
+    filter: blur(5px);
     margin-bottom: -620px;
 }
 
-#montanha2{
-    display: flex;
-    user-select: none;
-    position: relative;
-    right: -1050px;
-    bottom: -70px;
-    z-index: -99;
-    width: 100%;
-    filter: contrast(125%);
-    filter: brightness(0.8);
-    filter: blur(8px);
-    margin-bottom: -620px;
+#montanha1 {
+    left: -350vh;
+    bottom: -120px;
+}
 
+#montanha2 {
+    right: 50vh;
+    bottom: -90px;
 }
 
 .apresentacao {
@@ -121,46 +163,63 @@
     margin-top: 75px;
 }
 
-.escritoApresentacao h1{
+.escritoApresentacao h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.escritoApresentacao p{
+.escritoApresentacao p {
     font-size: 18px;
 
 }
 
-.escritoApresentacao h4{
+.escritoApresentacao h4 {
     font-size: 1.5rem;
 }
 
-.escritoApresentacao h4, .escritoApresentacao p{
+.escritoApresentacao h4,
+.escritoApresentacao p {
     margin: 10px 0;
 }
 
-.apresentacao a{
+.apresentacao a {
     text-decoration: none;
 }
 
-.linksExternos{
+.linksExternos {
     display: flex;
     justify-content: center;
     bottom: 200px;
     padding: 30px 0;
 }
 
-.linksExternos a{
+.linksExternos a {
     padding: 7px 16px;
-    border-radius: 10px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    border: 1px solid rgb(75, 75, 75);
+    color: rgb(184, 184, 184);
+
+    background-color: rgba(17, 80, 15, 0.466);
+    box-shadow: 0 8px 32px 0 rgba(102, 29, 150, 0.521);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+
+    /* border: 1px solid rgb(75, 75, 75); */
 }
 
-.linksExternos img{
+#github {
+    filter: invert();
+}
+
+.linksExternos a:hover {
+    background-color: rgba(51, 15, 80, 0.76);
+}
+
+.linksExternos img {
     height: 30px;
     margin-right: 10px;
 }
@@ -170,24 +229,25 @@
     justify-content: center;
 }
 
-.tituloSubtituloHabilidade h1, .tituloSubtituloHabilidade p {
+.tituloSubtituloHabilidade h1,
+.tituloSubtituloHabilidade p {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
-.campoHabilidade{
+.campoHabilidade {
     display: flex;
     max-width: 90%;
     margin: auto;
     padding-bottom: 120px;
 }
 
-.habilidade{
+.habilidade {
     padding-top: 25px;
 }
 
-.iconesHabilidades{
+.iconesHabilidades {
     /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(5, 16%);
@@ -195,7 +255,7 @@
     width: 50%;
 }
 
-.iconesHabilidades button{
+.iconesHabilidades button {
     margin-left: 15px;
     border: 3px rgb(146, 146, 146) solid;
     border-radius: 50%;
@@ -203,14 +263,15 @@
     height: 8vw;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0)
-    /* height: 150px; */
+        /* height: 150px; */
 }
 
-.iconesHabilidades button:hover{
+.iconesHabilidades button:hover {
     background-color: rgba(0, 0, 0, 0.2);
+
 }
 
-.iconesHabilidades button img{
+.iconesHabilidades button img {
     /* max-width: 80px; */
     display: flex;
     margin: auto;
@@ -218,7 +279,7 @@
     clear: both;
 }
 
-.iconesHabilidades button h2{
+.iconesHabilidades button h2 {
     display: flex;
     justify-content: center;
     font-size: 15px;
@@ -229,7 +290,7 @@
 }
 
 
-.infoHabilidade{
+.infoHabilidade {
     border-radius: 30px;
     border: 4px rgb(146, 146, 146) solid;
     margin: auto;
@@ -240,30 +301,30 @@
     flex-direction: column;
 }
 
-#tituloHabilidade{
+#tituloHabilidade {
     margin: 10px;
     font-size: 28px;
     font-weight: 800;
 }
 
-.infoHabilidade hr{
+.infoHabilidade hr {
     width: 50%;
     margin-bottom: 10px;
 }
 
-#descricaoHabilidadeEscrito{
+#descricaoHabilidadeEscrito {
     font-size: 22px;
     padding: 10px 20px;
     font-weight: 300;
 }
 
 
-#tituloProjetos{
+#tituloProjetos {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.campoProjetos{
+.campoProjetos {
     min-height: 500px;
 }
