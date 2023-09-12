@@ -1,32 +1,34 @@
+/*
 body {
     background-color: white;
 }
 
-.navegacao a{
+.navegacao a {
     color: black;
 }
 
-.navegacao a:hover{
+.navegacao a:hover {
     color: rgb(131, 131, 131);
 }
 
-.apresentacao a:hover{
+.apresentacao a:hover {
     color: rgb(131, 131, 131);
 }
 
-.apresentacao a{
+.apresentacao a {
     color: black;
 }
 
-.linksExternos a{
+.linksExternos a {
     background-color: rgb(196, 196, 196);
     color: white;
 }
 
-.linksExternos a:hover{
+.linksExternos a:hover {
     color: black;
 }
 
-.iconesHabilidades button h2{
+.iconesHabilidades button h2 {
     color: black;
 }
+/*

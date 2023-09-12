@@ -17,7 +17,7 @@ body {
     outline: none;
     border: none;
     border-radius: 8px;
-    right: 15px;
+    right: 30px;
     top: 15px;
     /* display: flex; */
     justify-content: flex-end;
@@ -32,7 +32,7 @@ body {
     /* padding: 10px; */
     position: fixed;
     z-index: 99;
-    width: 100%;
+    width: 100vw;
     height: 55px;
     display: flex;
     padding: 0 30px 0px 30px;
@@ -67,7 +67,7 @@ body {
 
 #imagemMinha {
     max-width: 180px;
-    margin: 20px 60px 20px 30px;
+    margin: 40px 40px 20px 0px;
     border-radius: 50%;
     animation: sobeDesce 1.05s infinite alternate;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 .desfoco {
-    box-shadow: 0 8px 32px 0 rgba(29, 37, 150, 0.521);
+    box-shadow: 0 0px 32px 10px rgba(29, 37, 150, 0.521);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
     border-radius: 20px;
@@ -101,17 +101,18 @@ body {
 
     /* backdrop-filter: blur(5px); */
     display: flex;
-    width: 1000px;
-    height: 450px;
+    width: 70vw;
+    height: 400px;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 20vh;
     padding: 10px;
 }
 
 .comeco {
-    height: 500px;
+    /* height: 500px; */
     /* display: contents; */
     flex-direction: column;
+    display: flex;
     align-items: center;
     /* position: absolute; */
     overflow: hidden;
@@ -151,26 +152,29 @@ body {
 }
 
 #montanha2 {
-    right: 50vh;
-    bottom: -90px;
+    right: 55vh;
+    bottom: -100px;
 }
 
 .apresentacao {
     display: flex;
     margin: auto;
     align-items: center;
+    /* justify-content: center; */
     max-width: 1000px;
-    margin-top: 75px;
+    /* margin-top: 75px; */
+    /* margin-top: 50px; */
+    padding: 0px 50px;
 }
 
 .escritoApresentacao h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.escritoApresentacao p {
+#descricao {
     font-size: 18px;
-
+    font-weight: 100;
 }
 
 .escritoApresentacao h4 {
@@ -199,14 +203,16 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: rgb(184, 184, 184);
+    color: rgb(255, 255, 255);
 
     background-color: rgba(17, 80, 15, 0.466);
-    box-shadow: 0 8px 32px 0 rgba(102, 29, 150, 0.521);
+    box-shadow: 0 0px 32px 0 rgba(102, 29, 150, 0.521);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.212);
+    /* border: 1px solid rgba(255, 255, 255, 0.212); */
+    /* border: 1px solid rgba(9, 158, 121, 0.274); */
+    border: 1px solid rgba(9, 158, 121, 0.274);
 
     /* border: 1px solid rgb(75, 75, 75); */
 }
@@ -216,7 +222,8 @@ body {
 }
 
 .linksExternos a:hover {
-    background-color: rgba(51, 15, 80, 0.76);
+    /* background-color: rgba(51, 15, 80, 0.76); */
+    background-color: rgba(9, 158, 121, 0.541);
 }
 
 .linksExternos img {
@@ -236,39 +243,66 @@ body {
     margin: 40px 0;
 }
 
+
+.telaHabilidades {
+    position: relative;
+    padding-bottom: 120px;
+    height: 100vh;
+}
+
 .campoHabilidade {
     display: flex;
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
-    padding-bottom: 120px;
 }
 
 .habilidade {
     padding-top: 25px;
 }
 
+
+#imagemFundoHabilidades {
+    height: 110vh;
+    /* width: 10000px; */
+    background: linear-gradient(135deg, rgb(255, 0, 255) 20%, rgb(29, 139, 190), cyan);
+    /* filter: brightness(0.3) blur(20px); */
+    filter: brightness(0.4);
+    position: fixed;
+    width: 110vw;
+    left: -20px;
+    /* top: 10px; */
+    /* height: auto; */
+    z-index: -1000;
+}
+
 .iconesHabilidades {
     /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(5, 16%);
-    gap: 20px;
+    grid-template-columns: repeat(5, 18%);
+    gap: 10px;
     width: 50%;
 }
 
 .iconesHabilidades button {
     margin-left: 15px;
-    border: 3px rgb(146, 146, 146) solid;
-    border-radius: 50%;
-    width: 8vw;
-    height: 8vw;
+    border: 2px rgb(146, 146, 146) solid;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0)
-        /* height: 150px; */
+
+    background-color: rgba(4, 0, 255, 0.027);
+
+    box-shadow: 0 0px 8px 0 rgba(119, 27, 180, 0.521);
+    backdrop-filter: blur(13.5px);
+    filter: saturate(0.6);
+    -webkit-backdrop-filter: blur(13.5px);
 }
 
 .iconesHabilidades button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-
+    background-color: rgba(0, 0, 0, 0.363);
+    box-shadow: 0 0px 32px 0 rgba(27, 120, 173, 0.37);
+    filter: saturate(1.7);
 }
 
 .iconesHabilidades button img {
@@ -277,6 +311,8 @@ body {
     margin: auto;
     width: calc(70% - 20px);
     clear: both;
+    /* box-shadow: 0 0px 32px 0 rgba(255, 5, 5, 0.521); */
+    filter: drop-shadow(0px 0px 5px rgba(27, 120, 173, 0.37));
 }
 
 .iconesHabilidades button h2 {
@@ -292,13 +328,18 @@ body {
 
 .infoHabilidade {
     border-radius: 30px;
-    border: 4px rgb(146, 146, 146) solid;
+    border: 1px rgb(146, 146, 146) solid;
     margin: auto;
     width: 90%;
     min-height: 18rem;
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    box-shadow: 0 0px 16px 0 rgba(29, 106, 150, 0.301);
+    backdrop-filter: blur(13.5px);
+    filter: brightness(1.2) contrast(1.25) saturate(1.2);
+    -webkit-backdrop-filter: blur(13.5px) contrast(1.25) saturate(1.2);
 }
 
 #tituloHabilidade {
@@ -313,7 +354,7 @@ body {
 }
 
 #descricaoHabilidadeEscrito {
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px 20px;
     font-weight: 300;
 }
@@ -322,9 +363,50 @@ body {
 #tituloProjetos {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    padding-bottom: 70px;
+    /* margin: 40px 0; */
+}
+
+.projetos {
+    width: 100vw;
+    padding-bottom: 100px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.219);
 }
 
 .campoProjetos {
-    min-height: 500px;
+    /* min-height: 500px; */
+    width: 100vw;
+    display: grid;
+    float: inline-start;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+    padding-bottom: 500px;
+}
+
+.campoProjetos .cadaProjeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: auto;
+}
+
+.campoProjetos .cadaProjeto img {
+    width: 35vw;
+}
+
+.campoProjetos .cadaProjeto:hover {
+    filter: drop-shadow(0px 0px 100px rgba(98, 156, 189, 0.658));
+}
+
+.cadaProjeto a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
