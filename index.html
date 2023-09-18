@@ -6,34 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/dark.css" id="linkCss">
     <link rel="stylesheet" href="style/allStyles.css">
+    <link rel="stylesheet" href="style/light.css" id="linkCss">
     <link rel="stylesheet" type="text/css"
         href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 </head>
-
-
 
 <body>
     <img src="data:," alt="imagem decorativa das habilidades" id="imagemFundoHabilidades" />
     <div class="topo">
         <nav class="navegacao">
             <a href="#home">Home</a>
-            <a href="#habilidades">Habilidade</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#certificados">Certificados</a>
             <a href="#projetos">Projetos</a>
         </nav>
         <button id="themeButton">Dark Mode</button>
     </div>
     <div class="inicioImagem" id="home">
         <div class="imagemDeFundo">
-            <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave">
+            <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave" />
+            <img src="./assets/sonder-quest-vaporwave-day.jpg" alt="" id="imagemVaporwaveLight" />
+
             <!-- <img src="./assets/gif vaporwave.gif" alt="" id="imagemVaporwave"> -->
             <!-- <img src="./assets/gif vaporwave2.gif" alt="" id="imagemVaporwave"> -->
-            <div class="montanhas">
-                <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha1">
-                <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha2">
-
-            </div>
         </div>
 
         <div class="desfoco">
@@ -57,17 +53,31 @@
                     </div>
                 </div>
                 <div class="linksExternos">
-                    <a class="github" href="https://github.com/Xacarami" target="_blank">
+                    <a href="https://github.com/Xacarami" target="_blank">
                         <img src="./assets/github.png" id="github" alt="GitHub">
                         <h3>GitHub</h3>
                     </a>
-                    <a class="linkedin" href="https://linkedin.com/in/gabriel-plautz" target="_blank">
+                    <a href="https://linkedin.com/in/gabriel-plautz" target="_blank">
                         <img src="./assets/linkedin.png" alt="LinkedIn">
                         <h3>LinkedIn</h3>
                     </a>
+                    <a href="./assets/CV Gabriel Plautz com cores.pdf" download="Curriculo Gabriel Plautz Eugenio"
+                        target="_blank">
+                        <img src="./assets/download icone.png" id="downloadCurriculo" alt="Download Curriculum Vitae">
+                        <h3>Currículo</h3>
+                    </a>
                 </div>
             </div>
+            <!-- <div class="montanhas"> -->
+            <!-- </div> -->
         </div>
+        <span class="spanMontanha">
+
+            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha1">
+            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha2">
+            <img src="./assets/coqueiro1.png" alt="" id="coqueiro1">
+            <img src="./assets/coqueiro1.png" alt="" id="coqueiro2">
+        </span>
     </div>
 
     <hr>
@@ -78,39 +88,76 @@
         <div class="habilidade" id="habilidades">
             <div class="tituloSubtituloHabilidade">
                 <h1>Habilidades adquiridas</h1>
-                <p>Habilidades e tecnologias aprendidas em bootcamps, cursos, desafios de código e projetos.</p>
+                <p>Habilidades e tecnologias aprendidas em bootcamps, cursos, desafios de código e em projetos.</p>
             </div>
 
             <div class="campoHabilidade">
                 <div class="iconesHabilidades">
                     <button id="html">
                         <img src="./assets/html.png" alt="HTML">
-                        <h2>HTML</h2>
+                        <!-- <h2>HTML</h2> -->
                     </button>
                     <button id="css">
                         <img src="./assets/css.png" alt="css">
-                        <h2>CSS</h2>
+                        <!-- <h2>CSS</h2> -->
                     </button>
                     <button id="javascript">
                         <img src="./assets/javascript.png" alt="javascript">
-                        <h2>JavaScript</h2>
+                        <!-- <h2>JavaScript</h2> -->
                     </button>
                     <button id="react">
                         <img src="./assets/react.png" alt="react">
-                        <h2>React</h2>
+                        <!-- <h2>React</h2> -->
+                    </button>
+                    <button id="java">
+                        <img src="./assets/java.png" alt="java">
+                        <!-- <h2>NodeJS</h2> -->
+                    </button>
+                    <button id="springboot">
+                        <img src="./assets/springboot.png" alt="springboot">
+                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="nodejs">
                         <img src="./assets/nodejs.png" alt="nodejs">
-                        <h2>NodeJS</h2>
+                        <!-- <h2>NodeJS</h2> -->
                     </button>
-                    <button id="postgresql">
-                        <img src="./assets/postgresql.png" alt="postgresql">
-                        <h2>PostgreSQL</h2>
+                    <button id="php">
+                        <img src="./assets/php.svg" alt="php">
+                        <!-- <h2>NodeJS</h2> -->
+                    </button>
+                    <button id="phpunit">
+                        <img src="./assets/phpunit.png" alt="phpunit">
+                        <!-- <h2>NodeJS</h2> -->
+                    </button>
+                    <button id="laravel">
+                        <img src="./assets/laravel.svg" alt="laravel">
+                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="sql">
                         <img src="./assets/sql.png" alt="sql">
-                        <h2>SQL</h2>
+                        <!-- <h2>SQL</h2> -->
                     </button>
+                    <button id="mysql">
+                        <img src="./assets/mysql.png" alt="mysql">
+                        <!-- <h2>SQL</h2> -->
+                    </button>
+                    <button id="postgresql">
+                        <img src="./assets/postgresql.png" alt="postgresql">
+                        <!-- <h2>PostgreSQL</h2> -->
+                    </button>
+                    <button id="restApi">
+                        <img src="./assets/rest api.webp" alt="restApi" class="restApiImagem">
+                        <!-- <h2>PostgreSQL</h2> -->
+                    </button>
+                    <button id="linux">
+                        <img src="./assets/linux.png" alt="Linux" class="linux">
+                        <!-- <h2>PostgreSQL</h2> -->
+                    </button>
+                    <button id="apache">
+                        <img src="./assets/apache.svg" alt="Apache" class="apache">
+                        <!-- <h2>PostgreSQL</h2> -->
+                    </button>
+
                 </div>
                 <div class="descricaoHabilidade">
                     <div class="infoHabilidade">
@@ -118,6 +165,97 @@
                         <hr>
                         <p id="descricaoHabilidadeEscrito">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="certificados" id="certificados">
+                <div class="tituloSubtituloHabilidade">
+                    <h1>Certificados</h1>
+                    <p>Certificados conquistados em cursos e bootcamps.</p>
+                </div>
+
+                <div class="listaDeCertificados">
+                    <table border="1" class="conteinerCertificadoUnico">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Habilidades aprendidas</th>
+                            <th>Horas</th>
+                            <th>Data</th>
+                            <th>Certificado</th>
+                        </tr>
+                        <tr>
+                            <td>Bootcamp Carrefour Web Developer<span><br>Entre 17.000 inscritos, somente 14 projetos
+                                    foram escolhidos para apresentar ao Carrefour, e o meu foi um deles.</span></td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/html.png" alt="HTML">
+                                <img src="./assets/css.png" alt="CSS">
+                                <img src="./assets/javascript.png" alt="javascript">
+                                <img src="./assets/react.png" alt="react">
+                                <img src="./assets/java.png" alt="java">
+                                <img src="./assets/springboot.png" alt="springboot">
+                            </td>
+                            <td>104 horas</td>
+                            <td>12/05/2022</td>
+                            <td><a href="https://www.dio.me/certificate/92543EC1" target="_blank">Clique aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bootcamp Impulso Javascript Evolution</td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/html.png" alt="HTML">
+                                <img src="./assets/css.png" alt="CSS">
+                                <img src="./assets/javascript.png" alt="javascript">
+                                <img src="./assets/react.png" alt="react">
+                                <img src="./assets/nodejs.png" alt="nodejs">
+                                <img src="./assets/postgresql.png" alt="postgresql">
+                            </td>
+                            <td>104 horas</td>
+                            <td>06/08/2022</td>
+                            <td><a href="https://www.dio.me/certificate/28A7253B" target="_blank">Clique aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Québec Java Digital</td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/java.png" alt="java">
+                                <img src="./assets/springboot.png" alt="springboot">
+                                <img src="./assets/postgresql.png" alt="postgresql">
+                            </td>
+                            <td>93 horas</td>
+                            <td>18/10/2022</td>
+                            <td><a href="https://www.dio.me/certificate/8D287042" target="_blank">Clique aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Formação PHP Experience</td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/php.svg" alt="php">
+                                <img src="./assets/phpunit.png" alt="phpunit">
+                                <img src="./assets/laravel.svg" alt="laravel">
+                                <img src="./assets/rest api.webp" alt="restApi" id="restApiImagem">
+                            </td>
+                            <td>40 horas</td>
+                            <td>22/02/2023</td>
+                            <td><a href="https://www.dio.me/certificate/E0324C16" target="_blank">Clique aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>Linux do Zero</td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/linux.png" alt="Linux" class="linux">
+                                <img src="./assets/mysql.png" alt="mysql">
+                                <img src="./assets/apache.svg" alt="Apache" class="apache">
+                            </td>
+                            <td>44 horas</td>
+                            <td>01/03/2023</td>
+                            <td><a href="https://www.dio.me/certificate/546974E4" target="_blank">Clique aqui</a></td>
+                        </tr>
+                        <tr>
+                            <td>CodeCamp 1st Edition<span><br>Entre 1.800 competidores, fiquei em 4º.</span></td>
+                            <td class="imagensCertificadosHabilidade">
+                                <img src="./assets/javascript.png" alt="javascript">
+                            </td>
+                            <td>14 horas</td>
+                            <td>03/03/2023</td>
+                            <td><a href="https://www.dio.me/certificate/71078B10" target="_blank">Clique aqui</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -132,27 +270,43 @@
         <div class="campoProjetos">
             <div class="cadaProjeto">
                 <a href="https://github.com/Xacarami/Carrefour-API-Localizacao" target="_blank">
-                    <h2>Carrefour-API-Localizacao</h2>
+                    <h2>Carrefour e-commerce com APIs</h2>
                     <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto carrefour .png" />
+                    <hr class="riscoDosProjetos">
                 </a>
-                <p>Feito em React, consome a API disponibilizada pelo Carrefour para criar um e-commerce, e também uma
-                    API para localizações de mercados mais próximos</p>
+                <p>Feito em React, consome a API disponibilizada pelo Carrefour para criar o e-commerce, e uma
+                    API para encontrar os mercados mais próximos e seus produtos.
+                    <br>Foi desenvolvido durante um bootcamp, e então foi um
+                    dos 10 projetos escolhidos para serem apresentados aos programadores e ao RH do Carrefour
+                    <br>Foi usado axios, react-router-dom, e também hooks como useParams, useEffect, useState
+                    e useNavigate
+                </p>
             </div>
             <div class="cadaProjeto">
-                <a href="#">
-                    <h2>Carrefour-API-Localizacao</h2>
-                    <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto carrefour .png" />
+                <a href="https://play.google.com/store/apps/details?id=com.xstudio.snapclean" target="_blank">
+                    <h2>SnapClean: Gerencie Arquivos</h2>
+                    <img alt="projeto do Carrefour usando APIs" src="assets/projetos/proejto snapclean.png" />
+                    <hr class="riscoDosProjetos">
                 </a>
-                <p>Feito em React, consome a API disponibilizada pelo Carrefour para criar um e-commerce, e também uma
-                    API para localizações de mercados mais próximos</p>
+                <p>Feito em Java, esse app para Android acelera a limpeza de arquivos indesejados e liberação de espaço
+                    rápido. Basta selecionar uma pasta com imagens, vídeos, áudios ou outros tipos, e arrastar para um
+                    lado para excluir, e para o outro para manter. Seu código está fechado até o momento.
+                    <br>Meu primeiro app mobile. Foi utilizado a IDE Android Studio, e sua estrutura é feita de Java
+                    puro. A ajuda do ChatGPT foi útil para ajudar à usar funções já existentes do Android, como por
+                    exemplo o
+                    dispatchTouchEvent e onBackPressed.
+                </p>
             </div>
             <div class="cadaProjeto">
-                <a href="#">
-                    <h2>Carrefour-API-Localizacao</h2>
-                    <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto carrefour .png" />
+                <a href="https://github.com/Xacarami/Api-GitHub-DarkMode" target="_blank">
+                    <h2>Pesquisa no GitHub por API</h2>
+                    <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto github.png" />
+                    <hr class="riscoDosProjetos">
                 </a>
-                <p>Feito em React, consome a API disponibilizada pelo Carrefour para criar um e-commerce, e também uma
-                    API para localizações de mercados mais próximos</p>
+                <p>Feito em React, ao pesquisar por um nickname, o perfil é procurado na API do GitHub. Ao encontrá-lo,
+                    mostrará informações como foto, empresa, e principalmente seus repositórios. No campo de
+                    repositórios, conforme você escreve, irá filtrando todos os repositórios de acordo com o
+                    título, descrição e linguagem principal.</p>
             </div>
         </div>
     </div>
