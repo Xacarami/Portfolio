@@ -1,4 +1,5 @@
 const themeButton = document.getElementById("themeButton");
+const iconeTema = document.getElementById("imagemIconeTema");
 const linkCss = document.getElementById("linkCss");
 const tituloHabilidade = document.getElementById("tituloHabilidade");
 const descricaoHabilidadeEscrito = document.getElementById(
@@ -22,53 +23,61 @@ const botaorestApi = document.getElementById("restApi");
 const botaolinux = document.getElementById("linux");
 const botaoapache = document.getElementById("apache");
 
-// const fundoVaporWave = document.getElementById("imagemVaporwave");
 const montanha1 = document.getElementById("montanha1");
 const montanha2 = document.getElementById("montanha2");
 const coqueiro1 = document.getElementById("coqueiro1");
 const coqueiro2 = document.getElementById("coqueiro2");
 
+const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
 let objetoQueMove =
     linkCss.attributes[1].value == "style/dark.css" ? "montanha" : "coqueiro";
+
+if (prefersColorScheme.matches == false) {
+    linkCss.attributes[1].value = "style/light.css";
+    // themeButton.innerHTML = "Light Mode";
+    iconeTema.scr("./assets/lua.svg");
+    objetoQueMove = "coqueiro";
+} else {
+    linkCss.attributes[1].value = "style/dark.css";
+    // themeButton.innerHTML = "Dark Mode";
+    objetoQueMove = "montanha";
+}
 
 if (themeButton) {
     themeButton.addEventListener("click", () => {
         if (linkCss.attributes[1].value == "style/dark.css") {
             linkCss.attributes[1].value = "style/light.css";
-            themeButton.innerHTML = "Light Mode";
+            iconeTema.src = "./assets/sol.svg";
             objetoQueMove = "coqueiro";
         } else {
             linkCss.attributes[1].value = "style/dark.css";
-            themeButton.innerHTML = "Dark Mode";
+            // themeButton.innerHTML = "Dark Mode";
+            iconeTema.src = "./assets/lua.svg";
+
             objetoQueMove = "montanha";
         }
+        moverObjetos();
     });
 }
 
-window.addEventListener("scroll", () => {
-    if (objetoQueMove[0] == "montanha") {
+function moverObjetos() {
+    if (objetoQueMove == "montanha") {
         montanha1.style.left = (-window.scrollY / 9) * 5 - 875 + "px";
         montanha2.style.right = (-window.scrollY / 9) * 5 + 320 + "px";
     } else {
         coqueiro1.style.left = (-window.scrollY / 9) * 5 - 265 + "px";
         coqueiro2.style.right = (-window.scrollY / 9) * 5 - 210 + "px";
     }
-});
+}
 
-// window.addEventListener("scroll", () => {
-//     objetoQueMove[1].style.right = (-window.scrollY / 9) * 5 + 320 + "px";
-//     if (objetoQueMove[1] == montanha2){
-//         montanha1.style.left = (-window.scrollY / 9) * 5 - 875 + "px";
-//     } else {
-//         coqueiro1.style.left = (-window.scrollY / 9) * 2 - 875 + "px";
-//     }
-// });
+window.addEventListener("scroll", () => {
+    moverObjetos();
+});
 
 tituloHabilidade.innerHTML = "Tecnologias";
 descricaoHabilidadeEscrito.innerHTML =
     "Clique em um dos ícones ao lado para que possa ver mais detalhes sobre ela!";
-
-// Trocar para um JSON e transformar em switch:
 
 const descricaoLinguagens = {
     html: "HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.",

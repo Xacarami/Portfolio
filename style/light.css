@@ -2,6 +2,50 @@ body {
     background-color: white;
 }
 
+.topo {
+    background-color: rgba(255, 255, 255, 0.568);
+    /* background-color: rgba(255, 0, 0, 0.568); */
+    box-shadow: 0px 3px 4px 0px rgba(197, 18, 18, 0.521);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.212); */
+}
+
+#themeButton {
+    /* background-color: #9fe4ffbb; */
+    background-color: #e6e6e6bb;
+    /* background-color: rgba(136, 5, 5, 0.658); */
+    border: 2px solid gray;
+    box-shadow: 2px 2px 4px 0 rgba(150, 29, 29, 0.767);
+}
+
+
+#themeButton img {
+    width: 25px;
+    height: 25px;
+    /* filter: invert() ; */
+    /* transition: transform .3s; */
+    transition: all 0.4s ease-out 0s;
+
+    filter: invert(.75) sepia(.25) hue-rotate(336deg) saturate(2500%);
+}
+
+#themeButton:hover {
+    background-color: #ffbfbf9a;
+}
+
+#themeButton:hover img {
+    transform: rotate(90deg) translate(-50%, 50%) scale(1.1);
+}
+
+.navegacao a {
+    color: black;
+}
+
+.navegacao a:hover {
+    color: rgb(197, 18, 18);
+}
+
 #imagemVaporwave {
     display: none;
 }
@@ -27,22 +71,6 @@ body {
     display: flex;
 }
 
-.topo {
-    background-color: rgba(255, 255, 255, 0.568);
-    box-shadow: 0 8px 32px 0 rgba(197, 18, 18, 0.521);
-    backdrop-filter: blur(13.5px);
-    -webkit-backdrop-filter: blur(13.5px);
-    border: 1px solid rgba(255, 255, 255, 0.212);
-}
-
-.navegacao a {
-    color: black;
-}
-
-.navegacao a:hover {
-    color: rgb(197, 18, 18);
-}
-
 .apresentacao a:hover {
     color: rgb(131, 131, 131);
 }
@@ -63,23 +91,54 @@ body {
     border: 1px solid rgba(9, 158, 121, 0.541);
 }
 
+.divisorDeTela {
+    border: 0;
+    border-top: 1px solid rgb(129, 129, 129);
+}
+
+
 #imagemFundoHabilidades {
-    background: linear-gradient(135deg, rgb(255, 255, 255) 20%, rgb(255, 224, 224), rgb(255, 162, 162));
+    /* background: linear-gradient(135deg, rgb(255, 230, 230) 20%, rgb(255, 239, 239), rgb(255, 197, 197)); */
+    background: white;
 }
 
 .iconesHabilidades button {
     border: 2px rgb(128, 128, 128) solid;
     background-color: rgba(255, 0, 0, 0.021);
+    backdrop-filter: brightness(2);
     /* box-shadow: 0 0px 16px 0 rgba(180, 27, 27, 0.521); */
 }
 
 .iconesHabilidades button:hover {
-    background-color: rgba(255, 193, 193, 0.295);
-    box-shadow: 0 0px 16px 0 rgba(173, 27, 27, 0.37);
+    background-color: rgba(218, 218, 218, 0.781);
+    /* box-shadow: 2px 2px 24px 0 rgba(173, 27, 27, 0.37); */
 }
 
 .iconesHabilidades button h2 {
     color: black;
+}
+
+.infoHabilidade {
+    box-shadow: 10px 10px 32px 0 rgba(150, 29, 29, 0.678);
+    /* backdrop-filter: blur(13.5px); */
+    /* filter: brightness(1.2) contrast(1.25) saturate(1.2); */
+    /* -webkit-backdrop-filter: blur(13.5px) contrast(1.25) saturate(1.2); */
+}
+
+.conteinerCertificadoUnico,
+tr,
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+td span,
+td a {
+    color: red;
+}
+
+td a:hover {
+    color: rgb(255, 150, 150);
 }
 
 /* .restApiImagem, */
@@ -93,4 +152,31 @@ td #restApiImagem {
 
 #imagemFundoHabilidades {
     filter: brightness(1);
+}
+
+.projetos {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.campoProjetos .cadaProjeto {
+    background-color: rgba(105, 105, 105, 0.103);
+    box-shadow: 10px 10px 40px -5px rgba(182, 21, 21, 0.5);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.campoProjetos .cadaProjeto:hover img {
+    filter: drop-shadow(0px 0px 10px rgba(255, 38, 38, 0.493));
+}
+
+.cadaProjeto h2 {
+    color: black;
+    font-weight: 800;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.164);
+    /* text-decoration: underline 3px; */
+}
+
+.riscoDosProjetos {
+    background-image: linear-gradient(to right, transparent, #ff5a5abb, transparent);
+    filter: drop-shadow(0px 0px 100px rgba(207, 70, 70, 0.658));
+    box-shadow: 0px 0px 15px rgba(189, 98, 98, 0.658);
 }

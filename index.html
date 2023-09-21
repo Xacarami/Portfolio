@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/allStyles.css">
-    <link rel="stylesheet" href="style/light.css" id="linkCss">
+    <link rel="stylesheet" href="style/dark.css" id="linkCss">
     <link rel="stylesheet" type="text/css"
         href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,9 @@
             <a href="#certificados">Certificados</a>
             <a href="#projetos">Projetos</a>
         </nav>
-        <button id="themeButton">Dark Mode</button>
+        <button id="themeButton">
+            <img src="./assets/lua.svg" alt="Modo Escuro" id="imagemIconeTema">
+        </button>
     </div>
     <div class="inicioImagem" id="home">
         <div class="imagemDeFundo">
@@ -80,7 +83,7 @@
         </span>
     </div>
 
-    <hr>
+    <hr class="divisorDeTela" />
 
     <div class="telaHabilidades">
 
@@ -95,173 +98,160 @@
                 <div class="iconesHabilidades">
                     <button id="html">
                         <img src="./assets/html.png" alt="HTML">
-                        <!-- <h2>HTML</h2> -->
                     </button>
                     <button id="css">
                         <img src="./assets/css.png" alt="css">
-                        <!-- <h2>CSS</h2> -->
                     </button>
                     <button id="javascript">
                         <img src="./assets/javascript.png" alt="javascript">
-                        <!-- <h2>JavaScript</h2> -->
                     </button>
                     <button id="react">
                         <img src="./assets/react.png" alt="react">
-                        <!-- <h2>React</h2> -->
                     </button>
                     <button id="java">
                         <img src="./assets/java.png" alt="java">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="springboot">
                         <img src="./assets/springboot.png" alt="springboot">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="nodejs">
                         <img src="./assets/nodejs.png" alt="nodejs">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="php">
                         <img src="./assets/php.svg" alt="php">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="phpunit">
                         <img src="./assets/phpunit.png" alt="phpunit">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="laravel">
                         <img src="./assets/laravel.svg" alt="laravel">
-                        <!-- <h2>NodeJS</h2> -->
                     </button>
                     <button id="sql">
                         <img src="./assets/sql.png" alt="sql">
-                        <!-- <h2>SQL</h2> -->
                     </button>
                     <button id="mysql">
                         <img src="./assets/mysql.png" alt="mysql">
-                        <!-- <h2>SQL</h2> -->
                     </button>
                     <button id="postgresql">
                         <img src="./assets/postgresql.png" alt="postgresql">
-                        <!-- <h2>PostgreSQL</h2> -->
                     </button>
                     <button id="restApi">
                         <img src="./assets/rest api.webp" alt="restApi" class="restApiImagem">
-                        <!-- <h2>PostgreSQL</h2> -->
                     </button>
                     <button id="linux">
                         <img src="./assets/linux.png" alt="Linux" class="linux">
-                        <!-- <h2>PostgreSQL</h2> -->
                     </button>
                     <button id="apache">
                         <img src="./assets/apache.svg" alt="Apache" class="apache">
-                        <!-- <h2>PostgreSQL</h2> -->
                     </button>
 
                 </div>
                 <div class="descricaoHabilidade">
                     <div class="infoHabilidade">
-                        <h3 id="tituloHabilidade">XXXXXXXXXX</h3>
+                        <h3 id="tituloHabilidade">Tecnologias</h3>
                         <hr>
-                        <p id="descricaoHabilidadeEscrito">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                        <p id="descricaoHabilidadeEscrito">Clique em um dos ícones ao lado para que possa ver mais
+                            detalhes sobre ela!</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="certificados" id="certificados">
-                <div class="tituloSubtituloHabilidade">
-                    <h1>Certificados</h1>
-                    <p>Certificados conquistados em cursos e bootcamps.</p>
-                </div>
-
-                <div class="listaDeCertificados">
-                    <table border="1" class="conteinerCertificadoUnico">
-                        <tr>
-                            <th>Nome</th>
-                            <th>Habilidades aprendidas</th>
-                            <th>Horas</th>
-                            <th>Data</th>
-                            <th>Certificado</th>
-                        </tr>
-                        <tr>
-                            <td>Bootcamp Carrefour Web Developer<span><br>Entre 17.000 inscritos, somente 14 projetos
-                                    foram escolhidos para apresentar ao Carrefour, e o meu foi um deles.</span></td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/html.png" alt="HTML">
-                                <img src="./assets/css.png" alt="CSS">
-                                <img src="./assets/javascript.png" alt="javascript">
-                                <img src="./assets/react.png" alt="react">
-                                <img src="./assets/java.png" alt="java">
-                                <img src="./assets/springboot.png" alt="springboot">
-                            </td>
-                            <td>104 horas</td>
-                            <td>12/05/2022</td>
-                            <td><a href="https://www.dio.me/certificate/92543EC1" target="_blank">Clique aqui</a></td>
-                        </tr>
-                        <tr>
-                            <td>Bootcamp Impulso Javascript Evolution</td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/html.png" alt="HTML">
-                                <img src="./assets/css.png" alt="CSS">
-                                <img src="./assets/javascript.png" alt="javascript">
-                                <img src="./assets/react.png" alt="react">
-                                <img src="./assets/nodejs.png" alt="nodejs">
-                                <img src="./assets/postgresql.png" alt="postgresql">
-                            </td>
-                            <td>104 horas</td>
-                            <td>06/08/2022</td>
-                            <td><a href="https://www.dio.me/certificate/28A7253B" target="_blank">Clique aqui</a></td>
-                        </tr>
-                        <tr>
-                            <td>Québec Java Digital</td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/java.png" alt="java">
-                                <img src="./assets/springboot.png" alt="springboot">
-                                <img src="./assets/postgresql.png" alt="postgresql">
-                            </td>
-                            <td>93 horas</td>
-                            <td>18/10/2022</td>
-                            <td><a href="https://www.dio.me/certificate/8D287042" target="_blank">Clique aqui</a></td>
-                        </tr>
-                        <tr>
-                            <td>Formação PHP Experience</td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/php.svg" alt="php">
-                                <img src="./assets/phpunit.png" alt="phpunit">
-                                <img src="./assets/laravel.svg" alt="laravel">
-                                <img src="./assets/rest api.webp" alt="restApi" id="restApiImagem">
-                            </td>
-                            <td>40 horas</td>
-                            <td>22/02/2023</td>
-                            <td><a href="https://www.dio.me/certificate/E0324C16" target="_blank">Clique aqui</a></td>
-                        </tr>
-                        <tr>
-                            <td>Linux do Zero</td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/linux.png" alt="Linux" class="linux">
-                                <img src="./assets/mysql.png" alt="mysql">
-                                <img src="./assets/apache.svg" alt="Apache" class="apache">
-                            </td>
-                            <td>44 horas</td>
-                            <td>01/03/2023</td>
-                            <td><a href="https://www.dio.me/certificate/546974E4" target="_blank">Clique aqui</a></td>
-                        </tr>
-                        <tr>
-                            <td>CodeCamp 1st Edition<span><br>Entre 1.800 competidores, fiquei em 4º.</span></td>
-                            <td class="imagensCertificadosHabilidade">
-                                <img src="./assets/javascript.png" alt="javascript">
-                            </td>
-                            <td>14 horas</td>
-                            <td>03/03/2023</td>
-                            <td><a href="https://www.dio.me/certificate/71078B10" target="_blank">Clique aqui</a></td>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </div>
     </div>
 
-    <hr>
+    <hr class="divisorDeTela" />
+
+    <div class="certificados" id="certificados">
+        <div class="tituloSubtituloHabilidade">
+            <h1>Certificados</h1>
+            <p>Certificados conquistados em cursos e bootcamps.</p>
+        </div>
+
+        <div class="listaDeCertificados">
+            <table border="1" class="conteinerCertificadoUnico">
+                <tr>
+                    <th>Nome</th>
+                    <th>Habilidades aprendidas</th>
+                    <th>Horas</th>
+                    <th>Data</th>
+                    <th>Certificado</th>
+                </tr>
+                <tr>
+                    <td>Bootcamp Carrefour Web Developer<span><br>Entre 17.000 inscritos, somente 14 projetos
+                            foram escolhidos para apresentar ao Carrefour, e o meu foi um deles.</span></td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/html.png" alt="HTML">
+                        <img src="./assets/css.png" alt="CSS">
+                        <img src="./assets/javascript.png" alt="javascript">
+                        <img src="./assets/react.png" alt="react">
+                        <img src="./assets/java.png" alt="java">
+                        <img src="./assets/springboot.png" alt="springboot">
+                    </td>
+                    <td>104 horas</td>
+                    <td>12/05/2022</td>
+                    <td><a href="https://www.dio.me/certificate/92543EC1" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td>Bootcamp Impulso Javascript Evolution</td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/html.png" alt="HTML">
+                        <img src="./assets/css.png" alt="CSS">
+                        <img src="./assets/javascript.png" alt="javascript">
+                        <img src="./assets/react.png" alt="react">
+                        <img src="./assets/nodejs.png" alt="nodejs">
+                        <img src="./assets/postgresql.png" alt="postgresql">
+                    </td>
+                    <td>104 horas</td>
+                    <td>06/08/2022</td>
+                    <td><a href="https://www.dio.me/certificate/28A7253B" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td>Québec Java Digital</td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/java.png" alt="java">
+                        <img src="./assets/springboot.png" alt="springboot">
+                        <img src="./assets/postgresql.png" alt="postgresql">
+                    </td>
+                    <td>93 horas</td>
+                    <td>18/10/2022</td>
+                    <td><a href="https://www.dio.me/certificate/8D287042" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td>Formação PHP Experience</td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/php.svg" alt="php">
+                        <img src="./assets/phpunit.png" alt="phpunit">
+                        <img src="./assets/laravel.svg" alt="laravel">
+                        <img src="./assets/rest api.webp" alt="restApi" id="restApiImagem">
+                    </td>
+                    <td>40 horas</td>
+                    <td>22/02/2023</td>
+                    <td><a href="https://www.dio.me/certificate/E0324C16" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td>Linux do Zero</td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/linux.png" alt="Linux" class="linux">
+                        <img src="./assets/mysql.png" alt="mysql">
+                        <img src="./assets/apache.svg" alt="Apache" class="apache">
+                    </td>
+                    <td>44 horas</td>
+                    <td>01/03/2023</td>
+                    <td><a href="https://www.dio.me/certificate/546974E4" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <td>CodeCamp 1st Edition<span><br>Entre 1.800 competidores, fiquei em 4º.</span></td>
+                    <td class="imagensCertificadosHabilidade">
+                        <img src="./assets/javascript.png" alt="javascript">
+                    </td>
+                    <td>14 horas</td>
+                    <td>03/03/2023</td>
+                    <td><a href="https://www.dio.me/certificate/71078B10" target="_blank">Clique aqui</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <hr class="divisorDeTela" />
 
     <div class="projetos" id="projetos">
         <div>
@@ -272,7 +262,7 @@
                 <a href="https://github.com/Xacarami/Carrefour-API-Localizacao" target="_blank">
                     <h2>Carrefour e-commerce com APIs</h2>
                     <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto carrefour .png" />
-                    <hr class="riscoDosProjetos">
+                    <hr class="riscoDosProjetos" />
                 </a>
                 <p>Feito em React, consome a API disponibilizada pelo Carrefour para criar o e-commerce, e uma
                     API para encontrar os mercados mais próximos e seus produtos.
@@ -286,7 +276,7 @@
                 <a href="https://play.google.com/store/apps/details?id=com.xstudio.snapclean" target="_blank">
                     <h2>SnapClean: Gerencie Arquivos</h2>
                     <img alt="projeto do Carrefour usando APIs" src="assets/projetos/proejto snapclean.png" />
-                    <hr class="riscoDosProjetos">
+                    <hr class="riscoDosProjetos" />
                 </a>
                 <p>Feito em Java, esse app para Android acelera a limpeza de arquivos indesejados e liberação de espaço
                     rápido. Basta selecionar uma pasta com imagens, vídeos, áudios ou outros tipos, e arrastar para um
@@ -301,7 +291,7 @@
                 <a href="https://github.com/Xacarami/Api-GitHub-DarkMode" target="_blank">
                     <h2>Pesquisa no GitHub por API</h2>
                     <img alt="projeto do Carrefour usando APIs" src="assets/projetos/projeto github.png" />
-                    <hr class="riscoDosProjetos">
+                    <hr class="riscoDosProjetos" />
                 </a>
                 <p>Feito em React, ao pesquisar por um nickname, o perfil é procurado na API do GitHub. Ao encontrá-lo,
                     mostrará informações como foto, empresa, e principalmente seus repositórios. No campo de
@@ -310,8 +300,6 @@
             </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
