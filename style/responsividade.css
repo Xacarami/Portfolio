@@ -1,0 +1,276 @@
+@media screen and (max-width: 1230px) {
+
+    .spanMontanha {
+        display: none;
+    }
+
+    .desfoco {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1210px) and (min-width: 1024px) {
+    .iconesHabilidades button {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .desfoco {
+        width: 90vw;
+    }
+
+    #imagemMinha {
+        max-width: 120px;
+        /* margin: 20px 20px 10px 0px; */
+        border-radius: 50%;
+    }
+
+    .apresentacao h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao h4 {
+        font-size: 20px;
+        text-align: end;
+    }
+
+    #descricao {
+        font-size: 16px;
+    }
+
+    .iconesHabilidades {
+        grid-template-columns: repeat(4, 23%);
+        gap: 10px;
+        width: 50%;
+    }
+
+    .iconesHabilidades button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .infoHabilidade {
+        width: 90%;
+    }
+
+    .listaDeCertificados {
+        padding: 10px;
+    }
+
+    .campoProjetos {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .campoProjetos .cadaProjeto {
+        width: 90vw;
+    }
+
+    .campoProjetos .cadaProjeto img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #sidebar,
+    #hamburgerButton {
+        display: none;
+    }
+
+    .navegacao {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #sidebar,
+    #hamburgerButton {
+        display: flex;
+    }
+
+    #hamburgerButton {
+        background-color: transparent;
+        border: none;
+        padding-left: 10px;
+    }
+
+    #hamburgerButton img {
+        width: 32px;
+    }
+
+    .navegacao {
+        display: none;
+    }
+
+    #fechadorDaSidebar {
+        display: none;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .sidebar {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: -280px;
+        width: 250px;
+        height: 100%;
+        padding-top: 65px;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .imagemDeFundo {
+        min-height: 100vh;
+        height: min-content;
+    }
+
+    .inicioImagem {
+        /* min-height: 100vh; */
+        min-height: 100vh;
+        height: fit-content;
+        /* max-height: 1000px; */
+        /* height: auto; */
+    }
+
+    .campoInicial {
+        height: auto;
+    }
+
+    .desfoco {
+        top: -70px;
+        left: 0;
+        right: 0;
+        width: 97%;
+        height: auto;
+        margin-top: 20vh;
+        padding: 10px;
+    }
+
+    .apresentacao {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .imagemTituloNome {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagemMinhaContainer {
+        padding: 10px 0;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apresentacao h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .apresentacao h4,
+    #descricao {
+        margin: 0px auto 40px auto;
+        font-family: Verdana, Ubuntu, sans-serif;
+    }
+
+    .apresentacao h4 {
+        font-size: 20px;
+    }
+
+    #descricao {
+        font-size: 18px;
+    }
+
+    .linksExternos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .linksExternos a {
+        width: 175px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tituloSubtituloHabilidade p {
+        text-align: center;
+    }
+
+    .campoHabilidade {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .iconesHabilidades {
+        display: grid;
+        /* grid-template-columns: repeat(4, 24%); */
+        grid-template-columns: repeat(4, calc(100vw / 4 - 10px));
+        gap: 5px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .iconesHabilidades button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .descricaoHabilidade {
+        width: 100%;
+    }
+
+    .imagensCertificadosHabilidade img {
+        width: 30px;
+        padding: 7px 2px;
+        /* max-height: 40px; */
+    }
+
+    .listaDeCertificados {
+        overflow: auto;
+        padding: 20px 0;
+    }
+
+    .campoProjetos {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .campoProjetos .cadaProjeto {
+        width: 90vw;
+    }
+
+    .cadaProjeto h2 {
+        padding: 30px 10px 40px 10px;
+        text-align: center;
+    }
+
+    .campoProjetos .cadaProjeto img {
+        width: 90%;
+    }
+}

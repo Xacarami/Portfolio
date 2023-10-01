@@ -10,42 +10,65 @@
     <link rel="stylesheet" href="style/dark.css" id="linkCss">
     <link rel="stylesheet" type="text/css"
         href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link rel="stylesheet" href="style/responsividade.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <img src="data:," alt="imagem decorativa das habilidades" id="imagemFundoHabilidades" />
+    <div id="fechadorDaSidebar"></div>
+    <div class="sidebar" id="sidebar">
+        <a href="#home" id="homeSideBar">Home</a>
+        <a href="#habilidades" id="habilidadesSideBar">Habilidades</a>
+        <a href="#certificados" id="certificadosSideBar">Certificados</a>
+        <a href="#projetos" id="projetosSideBar">Projetos</a>
+    </div>
     <div class="topo">
+        <button id="hamburgerButton">
+            <img src="./assets/hamburgermenu_120234.svg" alt="opções">
+        </button>
+
         <nav class="navegacao">
             <a href="#home">Home</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#certificados">Certificados</a>
             <a href="#projetos">Projetos</a>
         </nav>
+
         <button id="themeButton">
             <img src="./assets/lua.svg" alt="Modo Escuro" id="imagemIconeTema">
         </button>
     </div>
     <div class="inicioImagem" id="home">
-        <div class="imagemDeFundo">
+        <div class="campoInicial">
+
             <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave" />
             <img src="./assets/sonder-quest-vaporwave-day.jpg" alt="" id="imagemVaporwaveLight" />
+            <!-- <div class="imagemDeFundo"> -->
+            <!-- <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave" />
+                <img src="./assets/sonder-quest-vaporwave-day.jpg" alt="" id="imagemVaporwaveLight" /> -->
 
             <!-- <img src="./assets/gif vaporwave.gif" alt="" id="imagemVaporwave"> -->
             <!-- <img src="./assets/gif vaporwave2.gif" alt="" id="imagemVaporwave"> -->
-        </div>
+            <!-- </div> -->
 
-        <div class="desfoco">
-            <div class="comeco">
-                <div class="apresentacao">
-                    <div>
+            <div class="desfoco">
+                <div class="comeco">
+                    <div class="apresentacao">
+                        <!-- <div> -->
                         <!-- <img id="imagemMinha" src="./assets/foto boa pro forfólio.png" alt="Foto minha"> -->
                         <!-- <img id="imagemMinha" src="./assets/eu com cor retortado so cabeca.png" alt="Foto minha"> -->
-                        <img id="imagemMinha" src="./assets/eu2.jpg" alt="Foto minha">
-                    </div>
-                    <div class="escritoApresentacao">
-                        <h1>Gabriel Plautz Eugenio</h1>
-                        <h4>Desenvolvedor Front-End</h4>
+                        <!-- </div> -->
+                        <!-- <div class="escritoApresentacao"> -->
+                        <div class="imagemTituloNome">
+                            <div class="imagemMinhaContainer">
+                                <img id="imagemMinha" src="./assets/eu2.jpg" alt="Foto minha">
+                            </div>
+                            <div class="nomeTitulo">
+                                <h1>Gabriel Plautz Eugenio</h1>
+                                <h4>Desenvolvedor Front-End</h4>
+                            </div>
+                        </div>
                         <p id="descricao">
                             Desenvolvo projetos, principalmente em JavaScript e ReactJs. Meus conhecimentos são
                             geralmente
@@ -53,22 +76,24 @@
                             Atualmente estou aprimorando meus conhecimentos em PHP, UX-UI, Linux e
                             Laravel.
                         </p>
+                        <!-- </div> -->
                     </div>
-                </div>
-                <div class="linksExternos">
-                    <a href="https://github.com/Xacarami" target="_blank">
-                        <img src="./assets/github.png" id="github" alt="GitHub">
-                        <h3>GitHub</h3>
-                    </a>
-                    <a href="https://linkedin.com/in/gabriel-plautz" target="_blank">
-                        <img src="./assets/linkedin.png" alt="LinkedIn">
-                        <h3>LinkedIn</h3>
-                    </a>
-                    <a href="./assets/CV Gabriel Plautz com cores.pdf" download="Curriculo Gabriel Plautz Eugenio"
-                        target="_blank">
-                        <img src="./assets/download icone.png" id="downloadCurriculo" alt="Download Curriculum Vitae">
-                        <h3>Currículo</h3>
-                    </a>
+                    <div class="linksExternos">
+                        <a href="https://github.com/Xacarami" target="_blank">
+                            <img src="./assets/github.png" id="github" alt="GitHub">
+                            <h3>GitHub</h3>
+                        </a>
+                        <a href="https://linkedin.com/in/gabriel-plautz" target="_blank">
+                            <img src="./assets/linkedin.png" alt="LinkedIn">
+                            <h3>LinkedIn</h3>
+                        </a>
+                        <a href="./assets/CV Gabriel Plautz com cores.pdf" download="Curriculo Gabriel Plautz Eugenio"
+                            target="_blank">
+                            <img src="./assets/download icone.png" id="downloadCurriculo"
+                                alt="Download Curriculum Vitae">
+                            <h3>Currículo</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- <div class="montanhas"> -->
@@ -150,7 +175,7 @@
                     <div class="infoHabilidade">
                         <h3 id="tituloHabilidade">Tecnologias</h3>
                         <hr>
-                        <p id="descricaoHabilidadeEscrito">Clique em um dos ícones ao lado para que possa ver mais
+                        <p id="descricaoHabilidadeEscrito">Clique em um dos ícones para que possa ver mais
                             detalhes sobre ela!</p>
                     </div>
                 </div>

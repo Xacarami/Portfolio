@@ -28,6 +28,10 @@ const montanha2 = document.getElementById("montanha2");
 const coqueiro1 = document.getElementById("coqueiro1");
 const coqueiro2 = document.getElementById("coqueiro2");
 
+const menuButton = document.getElementById("hamburgerButton");
+const sidebar = document.getElementById("sidebar");
+const fechadorDaSidebar = document.getElementById("fechadorDaSidebar");
+
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 let objetoQueMove =
@@ -43,6 +47,25 @@ if (prefersColorScheme.matches == false) {
     // themeButton.innerHTML = "Dark Mode";
     objetoQueMove = "montanha";
 }
+
+function navBarControl() {
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-280px"; /* Fecha a barra lateral */
+        fechadorDaSidebar.style.display = "none";
+    } else {
+        sidebar.style.left = "0px"; /* Abre a barra lateral */
+        fechadorDaSidebar.style.display = "block";
+    }
+}
+
+//Na tela mobile ao clicar no botão hamburger
+menuButton.addEventListener("click", function () {
+    navBarControl();
+});
+
+fechadorDaSidebar.addEventListener("click", function () {
+    navBarControl();
+});
 
 if (themeButton) {
     themeButton.addEventListener("click", () => {
@@ -61,13 +84,19 @@ if (themeButton) {
     });
 }
 
+console.log(window.getComputedStyle(montanha2).left);
+
 function moverObjetos() {
     if (objetoQueMove == "montanha") {
         montanha1.style.left = (-window.scrollY / 9) * 5 - 875 + "px";
-        montanha2.style.right = (-window.scrollY / 9) * 5 + 320 + "px";
+        // montanha2.style.left = (-window.scrollY / 9) * 5 + 320 + "px";
+        montanha2.style.left =
+            (window.scrollY / 9) * 5 + (-1638 + window.innerWidth) + "px";
     } else {
         coqueiro1.style.left = (-window.scrollY / 9) * 5 - 265 + "px";
-        coqueiro2.style.right = (-window.scrollY / 9) * 5 - 210 + "px";
+        // coqueiro2.style.right = (-window.scrollY / 9) * 5 - 210 + "px";
+        coqueiro2.style.left =
+            (window.scrollY / 9) * 5 + (-1134 + window.innerWidth) + "px";
     }
 }
 
@@ -77,7 +106,7 @@ window.addEventListener("scroll", () => {
 
 tituloHabilidade.innerHTML = "Tecnologias";
 descricaoHabilidadeEscrito.innerHTML =
-    "Clique em um dos ícones ao lado para que possa ver mais detalhes sobre ela!";
+    "Clique em um dos ícones para que possa ver mais detalhes sobre ela!";
 
 const descricaoLinguagens = {
     html: "HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.",

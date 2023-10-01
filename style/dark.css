@@ -33,6 +33,21 @@ body {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
+#hamburgerButton {
+    filter: invert();
+}
+
+.sidebar {
+    background-color: rgba(10, 10, 34, 0.658);
+    box-shadow: 0 8px 32px 0 rgba(31, 41, 177, 0.644);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+}
+
+.sidebar a {
+    color: #fff;
+}
+
 #imagemVaporwave {
     display: flex;
 }
