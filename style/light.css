@@ -195,3 +195,36 @@ td #restApiImagem {
     filter: drop-shadow(0px 0px 100px rgba(207, 70, 70, 0.658));
     box-shadow: 0px 0px 15px rgba(189, 98, 98, 0.658);
 }
+
+
+/* Container de contato */
+.copiarEmail {
+    color: black;
+    background-color: lightgray;
+}
+
+.copiarEmail:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    box-shadow: 7px 7px 13px 0 rgba(0, 0, 0, 0.377);
+}
+
+.whatsapp {
+    border: 2px solid rgb(28, 170, 0);
+    background-color: transparent;
+    color: rgb(28, 170, 0);
+    font-weight: 500;
+}
+
+.whatsapp:hover {
+    background-color: rgb(28, 170, 0);
+    color: white;
+}
+
+.whatsapp:hover span img {
+    filter: invert(1)
+}
+
+.whatsapp span img {
+    filter: invert(.75) sepia(.25) hue-rotate(72deg) saturate(2500%) brightness(0.65);
+}

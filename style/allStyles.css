@@ -558,8 +558,6 @@ td a {
 .copiarEmail {
     cursor: pointer;
     padding: 10px;
-    color: black;
-    background-color: lightgray;
     width: 300px;
     text-align: center;
     border-radius: 17px;
@@ -574,17 +572,12 @@ td a {
     align-items: center;
 }
 
-.copiarEmail span img {
-    height: 20px;
-    padding-left: 10px;
+.email h4 span img {
+    height: 18px;
 }
 
-.copiarEmail:hover {
-    background-color: rgb(200, 199, 255);
-}
 
 .whatsapp {
-    background-color: rgb(104, 255, 74);
     border-radius: 17px;
     width: 350px;
     /* Para centralizar o parágrafo */
@@ -598,12 +591,7 @@ td a {
     cursor: pointer;
     padding: 10px;
     text-decoration: none;
-    color: black;
     margin: 0 auto 20px;
-}
-
-.whatsapp:hover {
-    background-color: rgb(87, 209, 62);
 }
 
 .whatsapp span img {

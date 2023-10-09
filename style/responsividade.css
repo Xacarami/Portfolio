@@ -295,6 +295,10 @@
         margin-bottom: 10px;
     }
 
+    #imagemFundoHabilidades {
+        height: 130vh;
+    }
+
     .tituloSubtituloHabilidade p {
         text-align: center;
     }
@@ -357,12 +361,55 @@
     .campoProjetos .cadaProjeto img {
         width: 90%;
     }
+
+
+    /* Container de contato */
+    .tituloSubtituloHabCerPro p {
+        padding: 0 10px;
+    }
+
+    .campoContato {
+        width: 100%;
+    }
+
+    .email {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .copiarEmail {
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .copiarEmail span img {
+        height: 20px;
+        padding-left: 10px;
+    }
+
+    .whatsapp {
+        width: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .whatsapp span img {
+        height: 25px;
+        padding-right: 7px;
+    }
 }
 
 
-
 /* Para telas Mobiles Small */
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 385px) {
+    .nomeTitulo h1 {
+        font-size: 20px;
+    }
+
+    .nomeTitulo h4 {
+        font-size: 16px;
+    }
+
     .tituloSubtituloHabCerPro h1 {
         font-size: 28px;
     }
