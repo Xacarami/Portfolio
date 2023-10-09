@@ -1,6 +1,6 @@
 body {
-    /* background-color: #1c1e27; */
     color: white;
+    background: linear-gradient(315deg, #660066 20%, #08506c 60%) fixed;
 }
 
 .topo {
@@ -8,11 +8,9 @@ body {
     box-shadow: 0 8px 32px 0 rgba(29, 37, 150, 0.521);
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
-    /* border: 1px solid rgba(255, 255, 255, 0.212); */
 }
 
 #themeButton {
-    /* background-color: #9fe4ffbb; */
     background-color: rgba(55, 5, 136, 0.377);
     border: 2px solid gray;
     box-shadow: 2px 2px 4px 0 rgba(102, 29, 150, 0.733);
@@ -89,6 +87,10 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.212);
 }
 
+.circuloAnimado::before {
+    background: linear-gradient(-45deg, #a77aad 0%, #a306b8 33%, #1e00ca 66%, #5994f6 100%);
+}
+
 .linksExternos a {
     color: rgb(255, 255, 255);
     background-color: rgba(17, 80, 15, 0.466);
@@ -101,12 +103,7 @@ body {
     border: 1px solid rgba(9, 158, 121, 0.541);
 }
 
-/* .iconesHabilidades button{
-    border: 5px rgb(146, 146, 146) solid;
-} */
-
 #imagemFundoHabilidades {
-    /* background: linear-gradient(135deg, rgb(255, 0, 255) 20%, rgb(29, 139, 190), cyan); */
     background: linear-gradient(315deg, rgb(255, 0, 255) 20%, rgb(29, 139, 190), cyan);
 }
 

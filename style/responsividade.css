@@ -1,3 +1,62 @@
+/* Arquivo css criado ordenando da maior tela para a menos (mobile está lá embaixo) */
+
+/* Para telas ultrawide 4k */
+@media screen and (min-width: 2499px) {
+    .campoProjetos {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .iconesHabilidades {
+        grid-template-columns: repeat(8, 11%);
+        gap: 10px;
+        width: 70%;
+    }
+}
+
+/* Para telas ultrawide pouco menores que 4k */
+@media screen and (min-width: 2000px) and (max-width: 2499px) {
+    .campoProjetos {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .iconesHabilidades {
+        grid-template-columns: repeat(7, 12%);
+        gap: 10px;
+        width: 70%;
+    }
+}
+
+
+/* Para telas ultrawide normais */
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+    .campoProjetos {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .iconesHabilidades {
+        grid-template-columns: repeat(6, 15%);
+        gap: 10px;
+        width: 50%;
+    }
+}
+
+/* Tela maiores que média */
+@media screen and (min-width: 1230px) {
+    #montanha2 {
+        bottom: -100px;
+    }
+}
+
+/* Telas menores que a média */
 @media screen and (max-width: 1230px) {
 
     .spanMontanha {
@@ -9,6 +68,7 @@
     }
 }
 
+/* Evitando problema com botões se sobrepondo nessas resoluções */
 @media screen and (max-width: 1210px) and (min-width: 1024px) {
     .iconesHabilidades button {
         width: 90px;
@@ -16,6 +76,7 @@
     }
 }
 
+/* Telas médias, como 3x4 ou tablets */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .desfoco {
         width: 90vw;
@@ -23,8 +84,19 @@
 
     #imagemMinha {
         max-width: 120px;
-        /* margin: 20px 20px 10px 0px; */
         border-radius: 50%;
+    }
+
+    .circuloAnimado {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circuloAnimado:before {
+        /* https://alvarotrigo.com/shadow-gradients/ */
+        content: "";
+        width: 100%;
+        height: 100%;
     }
 
     .apresentacao h1 {
@@ -39,6 +111,7 @@
 
     #descricao {
         font-size: 16px;
+        font-weight: 300;
     }
 
     .iconesHabilidades {
@@ -76,6 +149,7 @@
     }
 }
 
+/* Definindo para que o botão de hamburger desapareça quando a tela for maior que a de um celular */
 @media screen and (min-width: 768px) {
 
     #sidebar,
@@ -88,6 +162,7 @@
     }
 }
 
+/* Telas de celulares */
 @media screen and (max-width: 767px) {
 
     #sidebar,
@@ -107,6 +182,10 @@
 
     .navegacao {
         display: none;
+    }
+
+    #themeButton {
+        right: 20px;
     }
 
     #fechadorDaSidebar {
@@ -137,21 +216,8 @@
         font-size: 18px;
     }
 
-    .imagemDeFundo {
-        min-height: 100vh;
-        height: min-content;
-    }
-
     .inicioImagem {
-        /* min-height: 100vh; */
         min-height: 100vh;
-        height: fit-content;
-        /* max-height: 1000px; */
-        /* height: auto; */
-    }
-
-    .campoInicial {
-        height: auto;
     }
 
     .desfoco {
@@ -162,6 +228,7 @@
         height: auto;
         margin-top: 20vh;
         padding: 10px;
+        position: relative;
     }
 
     .apresentacao {
@@ -181,6 +248,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .circuloAnimado {
+        padding: 76px;
+        width: 70%;
+        height: auto;
+    }
+
+    .circuloAnimado:before {
+        /* https://alvarotrigo.com/shadow-gradients/ */
+        content: "";
+        width: 100%;
+        height: 100%;
     }
 
     .apresentacao h1 {
@@ -227,8 +307,8 @@
 
     .iconesHabilidades {
         display: grid;
-        /* grid-template-columns: repeat(4, 24%); */
-        grid-template-columns: repeat(4, calc(100vw / 4 - 10px));
+        grid-template-columns: repeat(4, calc(25vw - 10px));
+
         gap: 5px;
         width: 100%;
         padding-bottom: 20px;
@@ -237,21 +317,25 @@
     .iconesHabilidades button {
         width: 90px;
         height: 90px;
+        margin: auto;
     }
 
     .descricaoHabilidade {
         width: 100%;
     }
 
+    .infoHabilidade {
+        padding-bottom: 20px;
+    }
+
     .imagensCertificadosHabilidade img {
         width: 30px;
         padding: 7px 2px;
-        /* max-height: 40px; */
     }
 
     .listaDeCertificados {
         overflow: auto;
-        padding: 20px 0;
+        padding: 20px 10px;
     }
 
     .campoProjetos {
@@ -272,5 +356,25 @@
 
     .campoProjetos .cadaProjeto img {
         width: 90%;
+    }
+}
+
+
+
+/* Para telas Mobiles Small */
+@media screen and (max-width: 374px) {
+    .tituloSubtituloHabCerPro h1 {
+        font-size: 28px;
+    }
+
+    .tituloSubtituloHabCerPro p,
+    .tituloSubtituloHabCerPro h1 {
+        padding: 0 5px;
+    }
+
+    .iconesHabilidades {
+        grid-template-columns: repeat(3, 31%);
+        gap: 10px;
+        width: 100%;
     }
 }

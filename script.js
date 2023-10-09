@@ -33,18 +33,21 @@ const sidebar = document.getElementById("sidebar");
 const fechadorDaSidebar = document.getElementById("fechadorDaSidebar");
 
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const inicioImagem = document.getElementById("home");
 
 let objetoQueMove =
     linkCss.attributes[1].value == "style/dark.css" ? "montanha" : "coqueiro";
 
 if (prefersColorScheme.matches == false) {
     linkCss.attributes[1].value = "style/light.css";
-    // themeButton.innerHTML = "Light Mode";
     iconeTema.scr("./assets/lua.svg");
+    inicioImagem.classList.add("imagemPredioVermelho");
+    inicioImagem.classList.remove("imagemVaporWave");
     objetoQueMove = "coqueiro";
 } else {
     linkCss.attributes[1].value = "style/dark.css";
-    // themeButton.innerHTML = "Dark Mode";
+    inicioImagem.classList.remove("imagemPredioVermelho");
+    inicioImagem.classList.add("imagemVaporWave");
     objetoQueMove = "montanha";
 }
 
@@ -67,41 +70,46 @@ fechadorDaSidebar.addEventListener("click", function () {
     navBarControl();
 });
 
+//Tenho que ter essa confirmação para evitar erros
 if (themeButton) {
     themeButton.addEventListener("click", () => {
         if (linkCss.attributes[1].value == "style/dark.css") {
             linkCss.attributes[1].value = "style/light.css";
             iconeTema.src = "./assets/sol.svg";
+            inicioImagem.classList.add("imagemPredioVermelho");
+            inicioImagem.classList.remove("imagemVaporWave");
             objetoQueMove = "coqueiro";
         } else {
             linkCss.attributes[1].value = "style/dark.css";
-            // themeButton.innerHTML = "Dark Mode";
             iconeTema.src = "./assets/lua.svg";
-
+            inicioImagem.classList.remove("imagemPredioVermelho");
+            inicioImagem.classList.add("imagemVaporWave");
             objetoQueMove = "montanha";
         }
-        moverObjetos();
+        if (window.innerWidth > 1230) {
+            moverObjetos();
+        }
     });
 }
 
-console.log(window.getComputedStyle(montanha2).left);
-
+//Planejo apenas chamar a função quando for maior que um celular, senão nem chama para não travar, por isso o if não está dentro
 function moverObjetos() {
     if (objetoQueMove == "montanha") {
-        montanha1.style.left = (-window.scrollY / 9) * 5 - 875 + "px";
-        // montanha2.style.left = (-window.scrollY / 9) * 5 + 320 + "px";
+        montanha1.style.right =
+            (window.scrollY / 9) * 5 + 0.7 * window.innerWidth + "px";
         montanha2.style.left =
-            (window.scrollY / 9) * 5 + (-1638 + window.innerWidth) + "px";
+            (window.scrollY / 9) * 5 + 0.72 * window.innerWidth + "px";
     } else {
-        coqueiro1.style.left = (-window.scrollY / 9) * 5 - 265 + "px";
-        // coqueiro2.style.right = (-window.scrollY / 9) * 5 - 210 + "px";
+        coqueiro1.style.left = (-window.scrollY / 9) * 5 - 310 + "px";
         coqueiro2.style.left =
             (window.scrollY / 9) * 5 + (-1134 + window.innerWidth) + "px";
     }
 }
 
 window.addEventListener("scroll", () => {
-    moverObjetos();
+    if (window.innerWidth > 1230) {
+        moverObjetos();
+    }
 });
 
 tituloHabilidade.innerHTML = "Tecnologias";

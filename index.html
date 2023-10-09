@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,16 +12,18 @@
         href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link rel="stylesheet" href="style/responsividade.css">
     <script src="script.js" defer></script>
+    <script src="copiarEmail.js" defer></script>
 </head>
 
 <body>
-    <img src="data:," alt="imagem decorativa das habilidades" id="imagemFundoHabilidades" />
+    <!-- <img src="data:," alt="imagem decorativa das habilidades" id="imagemFundoHabilidades" /> -->
     <div id="fechadorDaSidebar"></div>
     <div class="sidebar" id="sidebar">
         <a href="#home" id="homeSideBar">Home</a>
         <a href="#habilidades" id="habilidadesSideBar">Habilidades</a>
         <a href="#certificados" id="certificadosSideBar">Certificados</a>
         <a href="#projetos" id="projetosSideBar">Projetos</a>
+        <a href="#contato" id="ContatoSideBar">Contato</a>
     </div>
     <div class="topo">
         <button id="hamburgerButton">
@@ -33,78 +35,60 @@
             <a href="#habilidades">Habilidades</a>
             <a href="#certificados">Certificados</a>
             <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <button id="themeButton">
             <img src="./assets/lua.svg" alt="Modo Escuro" id="imagemIconeTema">
         </button>
     </div>
-    <div class="inicioImagem" id="home">
-        <div class="campoInicial">
-
-            <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave" />
-            <img src="./assets/sonder-quest-vaporwave-day.jpg" alt="" id="imagemVaporwaveLight" />
-            <!-- <div class="imagemDeFundo"> -->
-            <!-- <img src="./assets/carl-hodgson-vaporwaave-beder-project-2.jpg" alt="" id="imagemVaporwave" />
-                <img src="./assets/sonder-quest-vaporwave-day.jpg" alt="" id="imagemVaporwaveLight" /> -->
-
-            <!-- <img src="./assets/gif vaporwave.gif" alt="" id="imagemVaporwave"> -->
-            <!-- <img src="./assets/gif vaporwave2.gif" alt="" id="imagemVaporwave"> -->
-            <!-- </div> -->
-
-            <div class="desfoco">
-                <div class="comeco">
-                    <div class="apresentacao">
-                        <!-- <div> -->
-                        <!-- <img id="imagemMinha" src="./assets/foto boa pro forfólio.png" alt="Foto minha"> -->
-                        <!-- <img id="imagemMinha" src="./assets/eu com cor retortado so cabeca.png" alt="Foto minha"> -->
-                        <!-- </div> -->
-                        <!-- <div class="escritoApresentacao"> -->
-                        <div class="imagemTituloNome">
-                            <div class="imagemMinhaContainer">
-                                <img id="imagemMinha" src="./assets/eu2.jpg" alt="Foto minha">
-                            </div>
-                            <div class="nomeTitulo">
-                                <h1>Gabriel Plautz Eugenio</h1>
-                                <h4>Desenvolvedor Front-End</h4>
-                            </div>
+    <div class="inicioImagem imagemPredioVermelho" id="home">
+        <div class="desfoco">
+            <div class="comeco">
+                <div class="apresentacao">
+                    <div class="imagemTituloNome">
+                        <div class="imagemMinhaContainer">
+                            <div class="circuloAnimado"></div>
+                            <img id="imagemMinha" src="./assets/eu2.jpg" alt="Foto minha">
                         </div>
-                        <p id="descricao">
-                            Desenvolvo projetos, principalmente em JavaScript e ReactJs. Meus conhecimentos são
-                            geralmente
-                            adquiridos em Bootcamps, cursos, projetos pessoais e apps de ensino focado em linguagens.
-                            Atualmente estou aprimorando meus conhecimentos em PHP, UX-UI, Linux e
-                            Laravel.
-                        </p>
-                        <!-- </div> -->
+                        <div class="nomeTitulo">
+                            <h1>Gabriel Plautz Eugenio</h1>
+                            <h4>Desenvolvedor Front-End</h4>
+                        </div>
                     </div>
-                    <div class="linksExternos">
-                        <a href="https://github.com/Xacarami" target="_blank">
-                            <img src="./assets/github.png" id="github" alt="GitHub">
-                            <h3>GitHub</h3>
-                        </a>
-                        <a href="https://linkedin.com/in/gabriel-plautz" target="_blank">
-                            <img src="./assets/linkedin.png" alt="LinkedIn">
-                            <h3>LinkedIn</h3>
-                        </a>
-                        <a href="./assets/CV Gabriel Plautz com cores.pdf" download="Curriculo Gabriel Plautz Eugenio"
-                            target="_blank">
-                            <img src="./assets/download icone.png" id="downloadCurriculo"
-                                alt="Download Curriculum Vitae">
-                            <h3>Currículo</h3>
-                        </a>
-                    </div>
+                    <p id="descricao">
+                        Desenvolvo projetos, principalmente em JavaScript e ReactJs. Meus conhecimentos são
+                        geralmente
+                        adquiridos em Bootcamps, cursos, projetos pessoais e apps de ensino focado em linguagens.
+                        Atualmente estou aprimorando meus conhecimentos em PHP, UX-UI, Linux e
+                        Laravel.
+                    </p>
+                </div>
+                <div class="linksExternos">
+                    <a href="https://github.com/Xacarami" target="_blank">
+                        <img src="./assets/github.png" id="github" alt="GitHub">
+                        <h3>GitHub</h3>
+                    </a>
+                    <a href="https://linkedin.com/in/gabriel-plautz" target="_blank">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                        <h3>LinkedIn</h3>
+                    </a>
+                    <a href="./assets/CV com Portfolio Gabriel Plautz Eugenio.pdf"
+                        download="Curriculo Gabriel Plautz Eugenio.pdf" target="_blank">
+                        <img src="./assets/download icone.png" id="downloadCurriculo" alt="Download Curriculum Vitae">
+                        <h3>Currículo</h3>
+                    </a>
                 </div>
             </div>
-            <!-- <div class="montanhas"> -->
-            <!-- </div> -->
         </div>
         <span class="spanMontanha">
 
-            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha1">
-            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="" id="montanha2">
-            <img src="./assets/coqueiro1.png" alt="" id="coqueiro1">
-            <img src="./assets/coqueiro1.png" alt="" id="coqueiro2">
+            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="Imagem de montanha decorativa 1"
+                id="montanha1">
+            <img src="./assets/SeekPng.com_polygon-png_1220503.png" alt="Imagem de montanha decorativa 2"
+                id="montanha2">
+            <img src="./assets/coqueiro1.png" alt="Imagem de coqueiro decorativo 1" id="coqueiro1">
+            <img src="./assets/coqueiro1.png" alt="Imagem de coqueiro decorativo 2" id="coqueiro2">
         </span>
     </div>
 
@@ -112,62 +96,61 @@
 
     <div class="telaHabilidades">
 
-
         <div class="habilidade" id="habilidades">
-            <div class="tituloSubtituloHabilidade">
-                <h1>Habilidades adquiridas</h1>
+            <div class="tituloSubtituloHabCerPro">
+                <h1 id="tituloHabilidades">Habilidades adquiridas</h1>
                 <p>Habilidades e tecnologias aprendidas em bootcamps, cursos, desafios de código e em projetos.</p>
             </div>
 
             <div class="campoHabilidade">
                 <div class="iconesHabilidades">
                     <button id="html">
-                        <img src="./assets/html.png" alt="HTML">
+                        <img src="./assets/html.png" title="HTML" alt="HTML">
                     </button>
                     <button id="css">
-                        <img src="./assets/css.png" alt="css">
+                        <img src="./assets/css.png" title="CSS" alt="css">
                     </button>
                     <button id="javascript">
-                        <img src="./assets/javascript.png" alt="javascript">
+                        <img src="./assets/javascript.png" title="JavaScript" alt="javascript">
                     </button>
                     <button id="react">
-                        <img src="./assets/react.png" alt="react">
+                        <img src="./assets/react.png" title="React" alt="react">
                     </button>
                     <button id="java">
-                        <img src="./assets/java.png" alt="java">
+                        <img src="./assets/java.png" title="Java" alt="java">
                     </button>
                     <button id="springboot">
-                        <img src="./assets/springboot.png" alt="springboot">
+                        <img src="./assets/springboot.png" title="Spring Boot" alt="springboot">
                     </button>
                     <button id="nodejs">
-                        <img src="./assets/nodejs.png" alt="nodejs">
+                        <img src="./assets/nodejs.png" title="NodeJs" alt="nodejs">
                     </button>
                     <button id="php">
-                        <img src="./assets/php.svg" alt="php">
+                        <img src="./assets/php.svg" title="PHP" alt="php">
                     </button>
                     <button id="phpunit">
-                        <img src="./assets/phpunit.png" alt="phpunit">
+                        <img src="./assets/phpunit.png" title="PHPUnit" alt="phpunit">
                     </button>
                     <button id="laravel">
-                        <img src="./assets/laravel.svg" alt="laravel">
+                        <img src="./assets/laravel.svg" title="Laravel" alt="laravel">
                     </button>
                     <button id="sql">
-                        <img src="./assets/sql.png" alt="sql">
+                        <img src="./assets/sql.png" title="SQL" alt="sql">
                     </button>
                     <button id="mysql">
-                        <img src="./assets/mysql.png" alt="mysql">
+                        <img src="./assets/mysql.png" title="MySQL" alt="mysql">
                     </button>
                     <button id="postgresql">
-                        <img src="./assets/postgresql.png" alt="postgresql">
+                        <img src="./assets/postgresql.png" title="PostgreSQL" alt="postgresql">
                     </button>
                     <button id="restApi">
-                        <img src="./assets/rest api.webp" alt="restApi" class="restApiImagem">
+                        <img src="./assets/rest api.webp" title="Rest API" alt="restApi" class="restApiImagem">
                     </button>
                     <button id="linux">
-                        <img src="./assets/linux.png" alt="Linux" class="linux">
+                        <img src="./assets/linux.png" title="Linux" alt="Linux" class="linux">
                     </button>
                     <button id="apache">
-                        <img src="./assets/apache.svg" alt="Apache" class="apache">
+                        <img src="./assets/apache.svg" title="Apache" alt="Apache" class="apache">
                     </button>
 
                 </div>
@@ -186,8 +169,8 @@
     <hr class="divisorDeTela" />
 
     <div class="certificados" id="certificados">
-        <div class="tituloSubtituloHabilidade">
-            <h1>Certificados</h1>
+        <div class="tituloSubtituloHabCerPro">
+            <h1 id="tituloCertificados">Certificados</h1>
             <p>Certificados conquistados em cursos e bootcamps.</p>
         </div>
 
@@ -204,12 +187,12 @@
                     <td>Bootcamp Carrefour Web Developer<span><br>Entre 17.000 inscritos, somente 14 projetos
                             foram escolhidos para apresentar ao Carrefour, e o meu foi um deles.</span></td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/html.png" alt="HTML">
-                        <img src="./assets/css.png" alt="CSS">
-                        <img src="./assets/javascript.png" alt="javascript">
-                        <img src="./assets/react.png" alt="react">
-                        <img src="./assets/java.png" alt="java">
-                        <img src="./assets/springboot.png" alt="springboot">
+                        <img src="./assets/html.png" title="HTML" alt="HTML">
+                        <img src="./assets/css.png" title="CSS" alt="CSS">
+                        <img src="./assets/javascript.png" title="JavaScript" alt="javascript">
+                        <img src="./assets/react.png" title="React" alt="react">
+                        <img src="./assets/java.png" title="Java" alt="java">
+                        <img src="./assets/springboot.png" title="Spring Boot" alt="springboot">
                     </td>
                     <td>104 horas</td>
                     <td>12/05/2022</td>
@@ -218,12 +201,13 @@
                 <tr>
                     <td>Bootcamp Impulso Javascript Evolution</td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/html.png" alt="HTML">
-                        <img src="./assets/css.png" alt="CSS">
-                        <img src="./assets/javascript.png" alt="javascript">
-                        <img src="./assets/react.png" alt="react">
-                        <img src="./assets/nodejs.png" alt="nodejs">
-                        <img src="./assets/postgresql.png" alt="postgresql">
+                        <img src="./assets/html.png" title="HTML" alt="HTML">
+                        <img src="./assets/css.png" title="CSS" alt="CSS">
+                        <img src="./assets/javascript.png" title="JavaScript" alt="javascript">
+                        <img src="./assets/react.png" title="React" alt="react">
+                        <img src="./assets/nodejs.png" title="NodeJs" alt="nodejs">
+                        <img src="./assets/postgresql.png" title="PostgreSQL" alt="postgresql">
+                        <img src="./assets/sql.png" title="SQL" alt="sql">
                     </td>
                     <td>104 horas</td>
                     <td>06/08/2022</td>
@@ -232,9 +216,10 @@
                 <tr>
                     <td>Québec Java Digital</td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/java.png" alt="java">
-                        <img src="./assets/springboot.png" alt="springboot">
-                        <img src="./assets/postgresql.png" alt="postgresql">
+                        <img src="./assets/java.png" title="Java" alt="java">
+                        <img src="./assets/springboot.png" title="Spring Boot" alt="springboot">
+                        <img src="./assets/postgresql.png" title="PostgreSQL" alt="postgresql">
+                        <img src="./assets/sql.png" title="SQL" alt="sql">
                     </td>
                     <td>93 horas</td>
                     <td>18/10/2022</td>
@@ -243,10 +228,10 @@
                 <tr>
                     <td>Formação PHP Experience</td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/php.svg" alt="php">
-                        <img src="./assets/phpunit.png" alt="phpunit">
-                        <img src="./assets/laravel.svg" alt="laravel">
-                        <img src="./assets/rest api.webp" alt="restApi" id="restApiImagem">
+                        <img src="./assets/php.svg" title="PHP" alt="php">
+                        <img src="./assets/phpunit.png" title="PHPUnit" alt="phpunit">
+                        <img src="./assets/laravel.svg" title="Laravel" alt="laravel">
+                        <img src="./assets/rest api.webp" title="Rest API" alt="restApi" id="restApiImagem">
                     </td>
                     <td>40 horas</td>
                     <td>22/02/2023</td>
@@ -255,9 +240,9 @@
                 <tr>
                     <td>Linux do Zero</td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/linux.png" alt="Linux" class="linux">
-                        <img src="./assets/mysql.png" alt="mysql">
-                        <img src="./assets/apache.svg" alt="Apache" class="apache">
+                        <img src="./assets/linux.png" title="Linux" alt="Linux" class="linux">
+                        <img src="./assets/mysql.png" title="MySQL" alt="mysql">
+                        <img src="./assets/apache.svg" title="Apache" alt="Apache" class="apache">
                     </td>
                     <td>44 horas</td>
                     <td>01/03/2023</td>
@@ -266,7 +251,7 @@
                 <tr>
                     <td>CodeCamp 1st Edition<span><br>Entre 1.800 competidores, fiquei em 4º.</span></td>
                     <td class="imagensCertificadosHabilidade">
-                        <img src="./assets/javascript.png" alt="javascript">
+                        <img src="./assets/javascript.png" title="JavaScript" alt="javascript">
                     </td>
                     <td>14 horas</td>
                     <td>03/03/2023</td>
@@ -279,8 +264,9 @@
     <hr class="divisorDeTela" />
 
     <div class="projetos" id="projetos">
-        <div>
+        <div class="tituloSubtituloHabCerPro">
             <h1 id="tituloProjetos">Projetos</h1>
+            <p>Meus projetos realizados. Sejam em Bootcamps, sejam projetos pessoais</p>
         </div>
         <div class="campoProjetos">
             <div class="cadaProjeto">
@@ -323,6 +309,29 @@
                     repositórios, conforme você escreve, irá filtrando todos os repositórios de acordo com o
                     título, descrição e linguagem principal.</p>
             </div>
+        </div>
+    </div>
+
+    <hr class="divisorDeTela" />
+
+    <div class="contato" id="contato">
+        <div class="tituloSubtituloHabCerPro">
+            <h1>Contato</h1>
+            <p>Gostou do meu trabalho e quer entrar em contato? Escolha entre as opções abaixo:</p>
+        </div>
+        <div class="campoContato">
+            <a href="https://wa.me/5541987935910/?text=Encontrei%20seu%20portfólio,%20e%20gostaria%20de%20saber%20se%20você%20está%20disponível%20para%20trabalhar%20na%20minha%20empresa%20[nome%20da%20empresa,%20cargo,%20horário,%20Home%20Office%20ou%20a%20cidade%20e%20bairro...]."
+                target="_blank" rel="noopener noreferrer" class="whatsapp">
+                <span><img src="./assets/whatsapp logo.svg" alt=""></span>Entrar em contato pelo WhatsApp
+            </a>
+            <div class="email">
+                <h4>Clique para copiar o email</h4>
+                <div class="copiarEmail" onclick="copiarEmail()">gabriel.plautz2018@gmail.com<span><img
+                            src="./assets/clipboard icone.svg" alt=""></span></div>
+            </div>
+
+            <!-- <div class="whatsappContainer">
+            </div> -->
         </div>
     </div>
 </body>
